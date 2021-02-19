@@ -2,7 +2,8 @@ import React, { Suspense, lazy } from "react";
 import { Redirect, Switch, Route } from "react-router-dom";
 import { LayoutSplashScreen, ContentRoute } from "../_metronic/layout";
 import { BuilderPage } from "./pages/BuilderPage";
-import { MyPage } from "./pages/MyPage";
+import { WalletResume} from "./pages/WalletResume";
+import { Wallet } from "./pages/Wallet";
 import { DashboardPage } from "./pages/DashboardPage";
 
 const GoogleMaterialPage = lazy(() =>
@@ -33,7 +34,8 @@ export default function BasePage() {
         }
         <ContentRoute path="/dashboard" component={DashboardPage} />
         <ContentRoute path="/builder" component={BuilderPage} />
-        <ContentRoute path="/my-page" component={MyPage} />
+        <ContentRoute path="/resumo-da-carteira" component={WalletResume} />
+        <ContentRoute path="/carteira" component={Wallet} />
         <Route path="/google-material" component={GoogleMaterialPage} />
         <Route path="/react-bootstrap" component={ReactBootstrapPage} />
         <Route path="/e-commerce" component={ECommercePage} />

@@ -32,17 +32,28 @@ export function AsideMenuList({ layoutProps }) {
           </NavLink>
         </li>
         {/*end::1 Level*/}
-          <li
-              className={`menu-item ${getMenuItemActive("/my-page")}`}
-              aria-haspopup="true"
-          >
-              <NavLink className="menu-link" to="/my-page">
-                  <span className="svg-icon menu-icon">
-                      <SVG src={toAbsoluteUrl("/media/svg/icons/Design/Layers.svg")}/>
-                  </span>
-                  <span className="menu-text">My Dashboard</span>
-              </NavLink>
-          </li>
+        <li
+            className={`menu-item ${getMenuItemActive("/resumo-da-carteira")}`}
+            aria-haspopup="true"
+        >
+            <NavLink className="menu-link" to="/resumo-da-carteira">
+                <span className="svg-icon menu-icon">
+                    <SVG src={toAbsoluteUrl("/media/svg/icons/Design/Layers.svg")}/>
+                </span>
+                <span className="menu-text">Resumo da carteira</span>
+            </NavLink>
+        </li>
+        <li
+            className={`menu-item ${getMenuItemActive("/carteira")}`}
+            aria-haspopup="true"
+        >
+            <NavLink className="menu-link" to="/carteira">
+                <span className="svg-icon menu-icon">
+                    <SVG src={toAbsoluteUrl("/media/svg/icons/Design/Layers.svg")}/>
+                </span>
+                <span className="menu-text">Ativos da carteira</span>
+            </NavLink>
+        </li>
         {/*begin::1 Level*/}
         <li
           className={`menu-item ${getMenuItemActive("/builder", false)}`}
